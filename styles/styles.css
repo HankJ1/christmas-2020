@@ -1,0 +1,211 @@
+@font-face {
+    font-family: Sabon;
+    src: url(../fonts/Sabon-Font/Sabon_Roman.ttf)
+}
+
+h1 {
+    font-weight: 900;
+    text-align: center;
+    font-family: Mountains of Christmas;
+    font-size: 70px;
+    color: red;
+    text-shadow: 3px 3px 2px white;
+}
+
+h2 {
+    font-weight: 900;
+    text-align: center;
+    font-family: Mountains of Christmas;
+    font-size: 55px;
+    color: red;
+    text-shadow: 3px 3px 2px white;
+}
+h4 {
+    text-align: left;
+    font-family: Sabon;
+    margin: 8px 10px 12px 0px;
+    font-size: 22px;
+}
+.images {
+    border-radius: 15px;
+    max-height: 650px;
+    max-width: 60vw;
+    box-shadow: 0 0 20px black;
+}
+video {
+    object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* body {
+    background-image: url("../images/henry/snow-background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} */
+
+.gap {
+    margin-top: 200px
+}
+
+.picture-container {
+    display: flex;
+    position: relative;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 95vw;
+    height: 400px;
+    align-items: center;
+    border-radius: 15px;
+}
+ 
+.geezer-picture {
+    height: 27vw;
+    max-height: 325px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+}
+    .geezer-picture:hover {
+        transform: scale(1.1);
+    }
+
+    @media screen and (max-width: 700px) {
+        .picture-container {
+            flex-direction: column !important;
+            /* grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr); */
+            height: 1400px;
+        }
+        .geezer-picture {
+            height: 325px;
+        }
+    }
+.text-container {
+    display: flex;
+    justify-content: center;
+    max-width: 80vw;
+    position: relative;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(156, 151, 151, 0.85);
+    box-shadow: 0 0 10px rgba(156, 151, 151, 0.85);
+    border-radius: 10px;
+    font-family: trueChristmas;
+    /* font-size: 26px; */
+    color: black;
+    text-align: left;
+    
+}
+.collage {
+    display: block;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 100px rgb(14, 13, 13);
+    border-radius: 10px;
+    outline: black solid 5px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 60vw;
+  max-height: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
